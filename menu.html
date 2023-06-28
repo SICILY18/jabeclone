@@ -1,0 +1,330 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <style>
+    *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #B70404;
+}
+span{
+    color: orange;
+}
+nav{
+    background: white;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: #B70404;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #B70404;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #f2f2f2;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+.jabee{
+    position: relative;
+    width: 100px;
+    left: 110px;
+    top: -10px;
+    
+}
+.logo{
+    position: relative;
+    left: -0.6%;
+    top: -5%;
+}
+.set{
+    position: relative;
+    left: -550px;
+    font-weight: bolder;
+}
+.tagline{
+    position: relative;
+    right: -130px;
+    top: -80px;
+    color: orange;
+}
+span.tags{
+    color: orange;
+}
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+.menu{
+    position: relative;
+    font-weight: bolder;
+    color: white;
+    right: -750px;
+    bottom: -80px;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #cccc;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #cccc;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+  </style>
+  <body>
+    <section>
+    <nav>
+        <img class="jabee"src="jabee.png">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Jolli<span>Bee</span></label>
+      <ul>
+        <div class="set">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </div>
+    <li class="tagline">Sa Jollibee, <span class="tags">Bida ang saya</span></li>
+</nav>
+<!-- menu -->
+<div>
+    <h1 class="menu">Menu</h1>
+    <div class="card" style="width: 18rem; position: relative; right: -90px; top: 200px; align-items: center; background-color: white;  border-radius: 26px;">
+        <img class="card-img-top" style="width: 200px;" src="https://queen.jollibee.com.ph/2021/12/chickenjoy.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">6 - pc. Chickenjoy Bucket</h5>
+          <p class="card-text">A bucket of your favorite crispylicious, juicylicious Chickenjoy!</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">₱435</li>
+        </div>
+        <div class="card-body">
+          <a href="#" style="color: #B70404; font-weight: bold;">Order Now!</a>
+        </div>
+    </div>
+
+<div>
+    <div class="card" style="width: 18rem; position: relative; right: -670px; top: -340px; align-items: center; background-color: white;  border-radius: 26px;">
+        <img class="card-img-top" style="width: 200px;" src="https://queen.jollibee.com.ph/2022/01/1-pc-Chickenjoy-w-Burger-Steak-Half-Jolly-Spaghetti-Super-Meal.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">1 - pc. Chickenjoy w/ Burger Steak & Half Jolly Spaghetti Super Meal</h5>
+          <p class="card-text">Your Jollibee favorites in one Supermeal: 1pc Chickenjoy with Burger Steak and Half Jolly Spaghetti, with rice and drink.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">₱211</li>
+        </div>
+        <div class="card-body">
+          <a href="#" style="color: #B70404; font-weight: bold;">Order Now!</a>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="card" style="width: 18rem; position: relative; right: -1160px; top: -920px; align-items: center; background-color: white;  border-radius: 26px;">
+        <img class="card-img-top" style="width: 200px;" src="https://queen.jollibee.com.ph/2022/01/1pc-Chickenjoy-Solo.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">1 - pc. Chickenjoy Solo</h5>
+          <p class="card-text">Philippines’ best-tasting crispylicious, juicylicious Chickenjoy that is crispy on the outside, tender and juicy on the inside.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">₱82</li>
+        </div>
+        <div class="card-body">
+          <a href="#" style="color: #B70404; font-weight: bold;">Order Now!</a>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="card" style="width: 18rem; position: relative; right: -99px; top: -600px; align-items: center; background-color: white;  border-radius: 26px;">
+        <img class="card-img-top" style="width: 200px;" src="https://queen.jollibee.com.ph/2022/05/Jolly-Spaghetti-with-Yumburger-with-Drink.webp" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Jolly Spaghetti w/ Yumburger</h5>
+          <p class="card-text">The meatiest, cheesiest and sweet-sarap spaghetti! Freshly prepared noodles topped with Jollibee’s signature meaty spaghetti sauce, hotdog chunks and creamy grated cheese, paired with your favorite langhap-sarap Yumburger with 100% beef patty and special burger dressing.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">₱127</li>
+        </div>
+        <div class="card-body">
+          <a href="#" style="color: #B70404; font-weight: bold;">Order Now!</a>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="card" style="width: 18rem; position: relative; right: -680px; top: -1300px; align-items: center; background-color: white;  border-radius: 26px;">
+        <img class="card-img-top" style="width: 200px;" src="https://queen.jollibee.com.ph/2022/02/2-pc-Burger-Steak-Solo.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">2 - pc. Burger Steak</h5>
+          <p class="card-text">2 pieces of beef patty with flavorful mushroom gravy, topped with mushroom slices. Served with steamed rice.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">₱112</li>
+        </div>
+        <div class="card-body">
+          <a href="#" style="color: #B70404; font-weight: bold;">Order Now!</a>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="card" style="width: 18rem; position: relative; right: -1150px; top: -1740px; align-items: center; background-color: white;  border-radius: 26px;">
+        <img class="card-img-top" style="width: 200px;" src="https://queen.jollibee.com.ph/2022/01/Chocolate-Sundae-Twirl.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Chocolate Sundae Twirl</h5>
+          <p class="card-text">Thick and creamy vanilla soft serve topped with rich, indulgent chocolate syrup..</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">₱48</li>
+        </div>
+        <div class="card-body">
+          <a href="#" style="color: #B70404; font-weight: bold;">Order Now!</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+        <!-- end -->
+    </div>
+    <div class="footer-basic">
+        <footer style="display: re;">
+            <div class="social">
+                <a href="https://www.facebook.com/JollibeePhilippines" class="fab fa-facebook"></a>
+                <a href="https://www.instagram.com/jollibee/" class="fab fa-instagram"></a>
+                <a href="https://twitter.com/Jollibee" class="fab fa-twitter"></a>
+            </div>
+            <p class="copyright">Jolibee Philippines © 2023</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    </section>
+</body>
+</html>
+
